@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordGate</title>
+  <style>
+    body {font-family: Arial, sans-serif; background: #f2f6ff; margin: 0; padding: 40px 16px;}
+    main {max-width: 540px; margin: 40px auto; padding: 30px; background: white; border-radius: 18px; box-shadow: 0 8px 28px #1a31601c;}
+    h1 {color: #234dba; margin-bottom: 8px;}
+    p {color: #555;}
+    label {display: block; margin: 24px 0 8px; font-weight: bold;}
+    textarea {box-sizing: border-box; width: 100%; padding: 12px; border: 1px solid #aab6ca; border-radius: 8px; font: inherit;}
+    button {margin-top: 14px; background: #16a34a; color: white; border: 0; border-radius: 8px; padding: 12px 20px; font: inherit; cursor: pointer;}
+    #result {margin-top: 20px; overflow-wrap: anywhere;}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🌍 WordGate,CONNECT WITHOUT BORDERS</h1>
+    <p>Connecting people across languages.</p>
+    <label for="message">Your message</label>
+    <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+    <button type="button" onclick="showMessage()">Send message</button>
+    <p id="result" aria-live="polite"></p>
+  </main>
+  <script>
+    function showMessage() {
+      const message = document.getElementById('message').value;
+      document.getElementById('result').textContent = 'Your message: ' + message;
+    }
+  </script>
+</body>
+</html>

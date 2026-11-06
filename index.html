@@ -30,5 +30,23 @@
       document.getElementById('result').textContent = 'Your message: ' + message;
     }
   </script>
+<!-- Firebase code goes here -->
+  
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBqzXVQyuNorQDMj76wEgE2V0MYDhXGnZE",
+    authDomain: "worldgate-a471a.firebaseapp.com",
+    projectId: "worldgate-a471a",
+    storageBucket: "worldgate-a471a.firebasestorage.app",
+    messagingSenderId: "514152051937",
+    appId: "1:514152051937:web:77663d27f05f7c09f433a0"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  console.log("WordGate Firebase connected");
+</script>
+
 </body>
 </html>
